@@ -34,4 +34,34 @@ export const categoriesData = [
     name: "Medicine",
     image: "https://i.picsum.photos/id/60/200/200.jpg",
   },
+  {
+    id: 8,
+    name: "Lockdown Essentials",
+    image: "https://i.picsum.photos/id/70/200/200.jpg",
+  },
+  {
+    id: 9,
+    name: "Pet Products",
+    image: "https://i.picsum.photos/id/80/200/200.jpg",
+  },
+  {
+    id: 10,
+    name: "Office Supplies",
+    image: "https://i.picsum.photos/id/90/200/200.jpg",
+  },
+  {
+    id: 11,
+    name: "Snacks",
+    image: "https://i.picsum.photos/id/31/200/200.jpg",
+  },
+  {
+    id: 12,
+    name: "Toiletries",
+    image: "https://i.picsum.photos/id/33/200/200.jpg",
+  },
+  {
+    id: 13,
+    name: "Smoking Essentials",
+    image: "https://i.picsum.photos/id/34/200/200.jpg",
+  },
 ];
