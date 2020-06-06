@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { categoriesData } from "./categories-data";
-import CategoryItem from "../category-item/category-item.component";
+import SingleItem from "../single-item/single-item.component";
 
 import "./categories.styles.scss";
 
@@ -9,7 +9,7 @@ function Categories() {
   return (
     <div className="categories-container">
       {categories.map(({ id, ...restProps }) => (
-        <CategoryItem key={id} {...restProps} />
+        <SingleItem key={id} {...restProps} />
       ))}
     </div>
   );
