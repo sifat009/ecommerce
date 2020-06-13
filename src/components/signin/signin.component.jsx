@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import InputField from "../input-field/input-field.component";
+import ButtonField from "../button-field/button-field.component";
 
 import "./signin.styles.scss";
 
@@ -26,23 +28,21 @@ class SignIn extends Component {
         <div>I alrady have an account</div>
         <span>Sign in with your email and password</span>
         <form onSubmit={this.handleSubmit}>
-          <input
+          <InputField
             type="email"
             name="email"
-            id="user-email"
-            onChange={this.handleChange}
+            label="Email"
+            handleChange={this.handleChange}
           />
-          <label htmlFor="user-email">Email</label>
 
-          <input
+          <InputField
             type="password"
             name="password"
-            id="user-pass"
-            onChange={this.handleChange}
+            label="Password"
+            handleChange={this.handleChange}
           />
-          <label htmlFor="user-pass">Password</label>
 
-          <input type="submit" value="Submit" />
+          <ButtonField>Submit</ButtonField>
         </form>
       </div>
     );
