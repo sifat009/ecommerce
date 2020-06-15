@@ -25,13 +25,14 @@ class SignIn extends Component {
   render() {
     return (
       <div className="sign-in-page">
-        <div>I alrady have an account</div>
+        <h3>I already have an account</h3>
         <span>Sign in with your email and password</span>
         <form onSubmit={this.handleSubmit}>
           <InputField
             type="email"
             name="email"
             label="Email"
+            value={this.state.email}
             handleChange={this.handleChange}
           />
 
@@ -39,10 +40,14 @@ class SignIn extends Component {
             type="password"
             name="password"
             label="Password"
+            value={this.state.password}
             handleChange={this.handleChange}
           />
 
-          <ButtonField>Submit</ButtonField>
+          <div className="form-submit-wrapper">
+            <ButtonField>Submit</ButtonField>
+            <ButtonField>Sign In With Google</ButtonField>
+          </div>
         </form>
       </div>
     );

@@ -1,8 +1,69 @@
 .sign-in-page {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 40%;
+  align-items: flex-start;
+  justify-content: center;
+
+  h3 {
+    margin-bottom: 30px;
+  }
+
+  span {
+    margin-bottom: 30px;
+  }
+
+  span &,
+  label {
+    color: #686363;
+  }
+
   form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+
+    &,
+    input {
+      width: 98%;
+    }
+
+    .input-wrapper {
+      width: 100%;
+      margin: 20px 0px;
+      position: relative;
+    }
+
+    input {
+      border: none;
+      border-bottom: 2px solid #000;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    label {
+      position: absolute;
+      transition: 0.3s all;
+
+      &.active {
+        top: -20px;
+        font-size: 15px;
+      }
+    }
+
+    .form-submit-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      button {
+        width: 40%;
+      }
+    }
   }
 }
